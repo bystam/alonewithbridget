@@ -1,0 +1,30 @@
+{
+  "name": "alonewithbridget",
+  "version": "0.0.0",
+  "description": "lol",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodeunit tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bystam/alonewithbridget.git"
+  },
+  "keywords": [
+    "alone",
+    "with",
+    "bridget"
+  ],
+  "author": "Fredrik Bystam, Ludvig Jonsson",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/bystam/alonewithbridget/issues"
+  }
+}
