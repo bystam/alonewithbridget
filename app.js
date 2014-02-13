@@ -1,4 +1,5 @@
 var express = require('express');
+var instagram = require('./instagram');
 
 var app = express();
 
@@ -9,6 +10,7 @@ app.use(express.logger('dev'));
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(req, res) {
+	instagram.getInstagramData();
 	res.render('index',
 		{ title : 'Alone with Bridget' }
 	);
