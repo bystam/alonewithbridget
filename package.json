@@ -10,7 +10,7 @@
     "express": "*",
     "jade": "*",
     "nodeunit": "*",
-    "instagram-api": "*"
+    "instagram-node": "*"
   },
   "devDependencies": {},
   "scripts": {
