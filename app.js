@@ -9,14 +9,14 @@ app.use(express.logger('dev'));
 
 app.use(express.static(__dirname + '/public'))
 
+instagram.initiateInstagramRetrieval();
+
 app.get('/', function(req, res) {
-	instagram.getInstagramData(function(url) {
-		res.render('index',
-			{
-				title : 'Alone with Bridget',
-				url: url
-			}
-		);
+	instagram.getPictures(5, function (pictures) {
+		res.render('index', {
+			title : 'Alone with Bridget',
+        	pictures: pictures
+		});
 	});
 });
 

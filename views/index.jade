@@ -1,13 +1,12 @@
 doctype html
 
 html.full
-  // The full page image background will only work if the html has the custom class set to it! Don't delete it!
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
-    title Full Page Image Background Template for Bootstrap 3
+    title Alone With Bridget
     // Bootstrap core CSS
     link(href='css/bootstrap.css', rel='stylesheet')
     // Custom CSS for the 'Full' Template
@@ -37,4 +36,7 @@ html.full
     // JavaScript
     script(src='js/jquery-1.10.2.js')
     script(src='js/bootstrap.js')
-    img(src=url)
+    each picture in pictures
+      img(src=picture.url, height="300px", width="300px")
+      p #{picture.caption}
+
