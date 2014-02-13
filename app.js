@@ -10,10 +10,14 @@ app.use(express.logger('dev'));
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(req, res) {
-	instagram.getInstagramData();
-	res.render('index',
-		{ title : 'Alone with Bridget' }
-	);
+	instagram.getInstagramData(function(url) {
+		res.render('index',
+			{
+				title : 'Alone with Bridget',
+				url: url
+			}
+		);
+	});
 });
 
 var port = process.env.PORT || 5000;
