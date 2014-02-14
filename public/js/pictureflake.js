@@ -2,7 +2,7 @@
 var megaobjekt = {
     init: function () {
         $(".pictureFlake").each(function (i) {
-            var initialTimer = Math.random()*7000;
+            var initialTimer = Math.random()*15000;
             setTimeout(function () {
                 megaobjekt.animateOneFlake("#pic"+i);
             }, initialTimer);
@@ -10,7 +10,7 @@ var megaobjekt = {
     },
 
     animateOneFlake: function(flakeDiv) {
-        $(flakeDiv).css('top', -350);  
+        $(flakeDiv).css('top', -500);
         var stageWidth = $(window).width();
         var stageHeight = $(window).height() + 500;
         var randomLeftPosition = Math.ceil(Math.random()*stageWidth);
@@ -18,7 +18,7 @@ var megaobjekt = {
 
         $(flakeDiv).css('left', randomLeftPosition).animate({
             "top": "+=" + stageHeight
-        }, animationTime, function() {
+        }, animationTime, 'linear', function() {
             megaobjekt.animateOneFlake(flakeDiv);
         });
     }
