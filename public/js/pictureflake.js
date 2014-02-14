@@ -26,4 +26,18 @@ var megaobjekt = {
 
 $(document).ready(function () {
     megaobjekt.init();
+
+    setInterval ( function () {
+        $.getJSON('/pictures', function (pictures) {
+            var i = 0;
+            pictures.forEach (function (picture) {
+                $('#pic'+i).find('img').map(function() {
+                    this.src = picture.url;
+                });
+                $('#pic'+i+' p').text(picture.caption);
+                i++;
+            });
+        });
+    }, 10000 );
 });
+

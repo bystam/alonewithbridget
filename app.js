@@ -20,6 +20,12 @@ app.get('/', function(req, res) {
 	});
 });
 
+app.get('/pictures', function (req, res) {
+	instagram.getPictures(15, function (pictures) {
+		res.json(pictures);
+	});
+});
+
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
 	console.log("Listening on port: " + port);
