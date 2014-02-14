@@ -13,7 +13,7 @@ var megaobjekt = {
         $(flakeDiv).css('top', -500);
         var stageWidth = $(window).width();
         var stageHeight = $(window).height() + 700;
-        var randomLeftPosition = Math.ceil(Math.random()*stageWidth);
+        var randomLeftPosition = Math.ceil(Math.random()*stageWidth) - 150;
         var animationTime = 10000 + 7000*Math.random();
 
         $(flakeDiv).css('left', randomLeftPosition).animate({
