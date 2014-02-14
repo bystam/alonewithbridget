@@ -17,8 +17,8 @@ html.full
     script(src='js/jquery-1.10.2.js')
     script(src='js/bootstrap.js')
     script(src='js/pictureflake.js')
-    script(src='js/audio.js')
-    audio(id="audio", src="audio/allbymyself.mp3", preload="auto")
+    audio(preload="auto", autobuffer, loop, autoplay)
+      source(src='audio/allbymyself.mp3' type='audio/mp3')
 
     each picture, i in pictures
       div(id="pic"+i, class="pictureFlake")

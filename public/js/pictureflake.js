@@ -12,7 +12,7 @@ var megaobjekt = {
     animateOneFlake: function(flakeDiv) {
         $(flakeDiv).css('top', -500);
         var stageWidth = $(window).width();
-        var stageHeight = $(window).height() + 500;
+        var stageHeight = $(window).height() + 700;
         var randomLeftPosition = Math.ceil(Math.random()*stageWidth);
         var animationTime = 10000 + 7000*Math.random();
 
