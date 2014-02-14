@@ -12,33 +12,16 @@ html.full
     // Custom CSS for the 'Full' Template
     link(href='css/full.css', rel='stylesheet')
   body
-    nav.navbar.navbar-fixed-top.navbar-inverse(role='navigation')
-      .container
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='index.php') Start Bootstrap
-        // Collect the nav links, forms, and other content for toggling
-        .collapse.navbar-collapse.navbar-ex1-collapse
-          ul.nav.navbar-nav
-            li
-              a(href='#about') About
-            li
-              a(href='#services') Services
-            li
-              a(href='#contact') Contact
-        // /.navbar-collapse
-      // /.container
     // Page content goes here
     // JavaScript
     script(src='js/jquery-1.10.2.js')
     script(src='js/bootstrap.js')
     script(src='js/pictureflake.js')
+    script(src='js/audio.js')
+
     each picture, i in pictures
       div(id="pic"+i, class="pictureFlake")
         img(src=picture.url, height="200px", width="200px")
+
 
 

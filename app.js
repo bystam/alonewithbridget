@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'))
 instagram.initiateInstagramRetrieval();
 
 app.get('/', function(req, res) {
-	instagram.getPictures(5, function (pictures) {
+	instagram.getPictures(10, function (pictures) {
 		res.render('index', {
 			title : 'Alone with Bridget',
         	pictures: pictures
