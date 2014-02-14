@@ -36,7 +36,9 @@ html.full
     // JavaScript
     script(src='js/jquery-1.10.2.js')
     script(src='js/bootstrap.js')
-    each picture in pictures
-      img(src=picture.url, height="300px", width="300px")
-      p #{picture.caption}
+    script(src='js/pictureflake.js')
+    each picture, i in pictures
+      div(id="pic"+i, class="pictureFlake")
+        img(src=picture.url, height="200px", width="200px")
+
 
