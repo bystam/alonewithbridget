@@ -18,10 +18,11 @@ html.full
     script(src='js/bootstrap.js')
     script(src='js/pictureflake.js')
     script(src='js/audio.js')
+    audio(id="audio", src="audio/allbymyself.mp3", preload="auto")
 
     each picture, i in pictures
       div(id="pic"+i, class="pictureFlake")
-        img(src=picture.url, height="200px", width="200px")
+        img(src=picture.url, height="300px", width="300px")
 
 
 
