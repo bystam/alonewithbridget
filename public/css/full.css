@@ -19,7 +19,7 @@ body {
 
 .pictureFlake img{
     border-style:solid;
-    border-color: #cccccc;
+    border-color: #333333;
 	border-width:5px;
 }
 
@@ -27,9 +27,9 @@ body {
     border-style:solid;
     border-top-style: none;
 	border-width:5px;
-    border-color: #cccccc;
+    border-color: #333333;
 	width: 300px;
-	background: #333333;
+	background: #777777;
 	color: #cccccc;
 	padding: 5px;
 	word-wrap:break-word;
